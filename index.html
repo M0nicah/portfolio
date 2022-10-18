@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href="./src/images/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="/dist/output.css">
     <link rel="stylesheet" href="./src/input.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body class="bg-porcelain font w-full h-auto max-h-screen">
     <header class="container ">
@@ -23,7 +24,8 @@
                 <a href=""><li class="text-black hover:text-wild_willow ">Contacts</li></a>
             </ul>
             <div>
-                <button class="bg-emerald-500 flex justify-center items-center rounded-md shadow hover:shadow-xl text-center text-white px-2 py-2 mt-5 md:flex hidden">Download Resume</button>
+                <button class="bg-emerald-500 flex justify-center items-center rounded-md shadow hover:shadow-xl text-center text-white px-2 py-2 mt-5 md:flex hidden" data-aos="fade-left"
+                data-aos-offset="200" data-aos-delay="200" data-aos-duration="2000">Download Resume</button>
             </div>
             <!-- MOBILE MENU -->
             <div
@@ -67,16 +69,16 @@
         
         <article class="w-full lg:w-2/6 lg:px-[30px] lg:py-[150px] sm:px-[30px] px-[50px] py-[150px] grid justify-center items-center text-4xl lg:text-5xl leading-loose">
             <h2 class="text-emerald-600 font-bold tracking-wider">Hello👋🏽 I am</h2>
-            <p class="text-3xl lg:text-4xl font-extrabold leading-10">Monica Masae, </p>
+            <p class="text-3xl lg:text-4xl font-extrabold text leading-10">Monica Masae, </p>
             <p class="font-bold mt-1"> <span class="text-emerald-600">Web</span> Developer</p>
             <blockquote class="text-xs lg:text-sm tracking-tighter text-slate-500 mt-4">I develop applications with excellent technology.</blockquote>
             <div class=" mt-5">
-                <button class="bg-emerald-500 p-4 text-white text-base rounded-3xl shadow-md text-center cursor-pointer tracking-wide leading-none sm:inline-block transition duration-200 ease-in-out sm:mr-3 sm:mb-0">Contact Me</button>
-                <button class="bg-black p-4 text-white text-base rounded-3xl shadow-md text-center cursor-pointer tracking-wide leading-none sm:inline-block">Learn More</button>
+                <button class="bg-emerald-500 p-4 text-white text-base rounded-3xl shadow-md text-center cursor-pointer tracking-wide leading-none sm:inline-block transition duration-200 ease-in-out sm:mr-3 sm:mb-0" data-aos="fade-right" data-aos-offset="200" data-aos-delay="200" data-aos-duration="2000">Contact Me</button>
+                <button class="bg-black p-4 text-white text-base rounded-3xl shadow-md text-center cursor-pointer tracking-wide leading-none sm:inline-block" data-aos="fade-left" data-aos-offset="200" data-aos-delay="200" data-aos-duration="2000">Learn More</button>
             </div>
         </article>
         <aside class="w-1/2 lg:w-3/6 flex justify-end p-5">
-            <img src="./src/images/PNG_image-removebg-preview.png" alt="" class="w-96">
+            <img src="./src/images/PNG_image-removebg-preview.png" alt="" class="w-96"  data-aos="fade-up" data-aos-delay="200" data-aos-duration="2000">
         </aside>
         
     </main>
@@ -85,83 +87,91 @@
         <div class="h-full w-full">
             <div class=" py-10 px-10 ">
                 <div class="flex mx-auto justify-center items-center w-32">
-                    <img src="./src/images/logo2.png" alt="">
+                    <img src="./src/images/logo2.png" alt="" data-aos="fade-down" data-aos-offset="200" data-aos-delay="200" data-aos-duration="2000">
                 </div>
-                <h3 class="text-center text-black">Who am I?</h3>
-                <h1 class="text-center text-emerald-600 text-3xl">ABOUT ME</h1>
-                <p class="text-center text-tuna mt-5">Monica is a self-motivated and passionate Web  developer. I am looking to utilize <br> my skills in the development of highly impactful, versatile websites. <br>
+                <h3 class="text-center text-black" data-aos="fade-right" data-aos-offset="200" data-aos-delay="200" data-aos-duration="2000">Who am I?</h3>
+                <h1 class="text-center text-emerald-600 text-3xl" data-aos="fade-right" data-aos-offset="200" data-aos-delay="300" data-aos-duration="2500">ABOUT ME</h1>
+                <p class="text-center text-tuna mt-5" data-aos="fade-left" data-aos-offset="200" data-aos-delay="50" data-aos-duration="2000">Monica is a self-motivated and passionate Web  developer. I am looking to utilize <br> my skills in the development of highly impactful, versatile websites. <br>
                 I have 2+ years experience in the use of keenly designed solutions and <br> techniques in the development of viable and interactive websites. 
                 </p>
             </div>
             <!-- --------------- SKILLLS --------------- -->
-            <div class="bg-emerald-500 w-full  p-5 mt-10 text-center ">
-                <div class="text-center text-white  py-[25px]">
-                    <h1>SKILLS</h1>
-                    <P class="text-3xl text-tuna mt-5">Skills with Variety</P>
-                    <p class="text-center text-tuna mt-5">I have the skills and proficiencies required for any Software development role. <br> I have honed  my skills in front-end development, and User Interface design. </p>
+            <div class="bg-black w-full  p-5 mt-10 text-center h-full ">
+               <div class="text-center text-white  py-[25px]">
+                  <h1 class="text-4xl">Tech <span class="text-green-700 ">Stack</span></h1>
+                  <p class="text-center text-emerald-100 mt-5"> I have honed  my skills in front-end development, and User Interface design. </p>
 
-                </div>
-                
-                <div class="grid grid-cols-1 md:grid-cols-2 justify-center items-center mx-auto z-10 py-[33px]">
-                    <div class="bg-porcelain mt-5  w-96 shadow-xl  h-48  grid grid-cols-1 md:grid-cols-2 max-w-md md:max-w-6xl mx-auto top-32  sm:top-0  transition-transform hover:scale-110">
-                        <aside class="bg-green-300 float-left p-5 ">
-                            <h3 class=" font-bold  mb-3">Frontend Technologies</h3>
-                            <p class="text-sm italic">HTML, CSS, TailwindCSS, Bootstrap, JavaScript, React</p>
-                        </aside>
-                        <aside class="float-right sm:bg-porcelain sm:flex flex justify-center items-center ">
-                            <div class="flex mt-3  lg:block sm:flex-wrap ">
-                                <img src="https://img.icons8.com/color/48/000000/html-5--v1.png"/>
-                                <img src="https://img.icons8.com/color/48/000000/css3.png"/>
-                                
-                            </div>
-                            <div class="flex mt-3 lg:block sm:flex-wrap ">
-                                <img src="https://img.icons8.com/color/48/000000/tailwind_css.png"/>
-                                <img src="https://img.icons8.com/color/48/000000/bootstrap.png"/>
+               </div>
+               
+               <!-- <div class="grid grid-cols-1 md:grid-cols-2 justify-center items-center mx-auto z-10 py-[33px]">
+                  <div class="bg-porcelain mt-5  w-96 shadow-xl  h-48  grid grid-cols-1 md:grid-cols-2 max-w-md md:max-w-6xl mx-auto top-32  sm:top-0  transition-transform hover:scale-110">
+                     <aside class="bg-green-300 float-left p-5 ">
+                           <h3 class=" font-bold  mb-3">Frontend Technologies</h3>
+                           <p class="text-sm italic">HTML, CSS, TailwindCSS, Bootstrap, JavaScript, React</p>
+                     </aside>
+                     <aside class="float-right sm:bg-porcelain sm:flex flex justify-center items-center ">
+                           <div class="flex mt-3  lg:block sm:flex-wrap ">
+                              <img src="https://img.icons8.com/color/48/000000/html-5--v1.png"/>
+                              <img src="https://img.icons8.com/color/48/000000/css3.png"/>
+                              
+                           </div>
+                           <div class="flex mt-3 lg:block sm:flex-wrap ">
+                              <img src="https://img.icons8.com/color/48/000000/tailwind_css.png"/>
+                              <img src="https://img.icons8.com/color/48/000000/bootstrap.png"/>
 
-                            </div>
-                            <div class="flex mt-3 lg:block sm:flex-wrap">
-                               
-                                <img src="https://img.icons8.com/color/48/000000/javascript--v1.png"/>
-                                <img src="https://img.icons8.com/ultraviolet/40/000000/react--v1.png"/>
+                           </div>
+                           <div class="flex mt-3 lg:block sm:flex-wrap">
+                              
+                              <img src="https://img.icons8.com/color/48/000000/javascript--v1.png"/>
+                              <img src="https://img.icons8.com/ultraviolet/40/000000/react--v1.png"/>
 
-                            </div>
-                            
-                        </aside>
+                           </div>
+                           
+                     </aside>
 
-                    </div>
-                    <div class="bg-porcelain w-96 mt-5 shadow-xl h-48 grid grid-cols-1 md:grid-cols-2 gap-4 max-w-md md:max-w-6xl mx-auto top-32  sm:top-0  transition-transform hover:scale-110">
-                        <aside class="bg-green-300 float-left p-5  ">
-                            <h3 class=" font-bold mb-3">Backend Technologies</h3>
-                            <p class="text-sm italic">Angular, Python, Flask, Postgresql, PHP, Django</p>
-                        </aside>
-                        <aside class="float-right sm:bg-porcelain sm:flex flex justify-center items-center gap-2 ">
-                            <div class="flex mt-3  lg:block sm:flex-wrap ">
-                                <img src="https://img.icons8.com/fluency/48/000000/angularjs.png"/>
-                                <img src="https://img.icons8.com/color/48/000000/python--v1.png"/>
-                                
-                            </div>
-                            <div class="flex mt-3  lg:block sm:flex-wrap">
-                                <img src="https://img.icons8.com/ios/50/000000/flask.png"/>
-                                <img src="https://img.icons8.com/color/48/000000/postgreesql.png"/>
+                  </div>
+                  <div class="bg-porcelain w-96 mt-5 shadow-xl h-48 grid grid-cols-1 md:grid-cols-2 gap-4 max-w-md md:max-w-6xl mx-auto top-32  sm:top-0  transition-transform hover:scale-110">
+                     <aside class="bg-green-300 float-left p-5  ">
+                           <h3 class=" font-bold mb-3">Backend Technologies</h3>
+                           <p class="text-sm italic">Angular, Python, Flask, Postgresql, PHP, Django</p>
+                     </aside>
+                     <aside class="float-right sm:bg-porcelain sm:flex flex justify-center items-center gap-2 ">
+                           <div class="flex mt-3  lg:block sm:flex-wrap ">
+                              <img src="https://img.icons8.com/fluency/48/000000/angularjs.png"/>
+                              <img src="https://img.icons8.com/color/48/000000/python--v1.png"/>
+                              
+                           </div>
+                           <div class="flex mt-3  lg:block sm:flex-wrap">
+                              <img src="https://img.icons8.com/ios/50/000000/flask.png"/>
+                              <img src="https://img.icons8.com/color/48/000000/postgreesql.png"/>
 
-                            </div>
-                            <div class="flex mt-3  lg:block sm:flex-wrap">
-                                
-                                <img src="https://img.icons8.com/offices/30/000000/php-logo.png"/>
-                                <img src="https://img.icons8.com/color/48/000000/django.png" class="sm:pl-2"/>
-                            </div>
-                            
-                        </aside>
-    
-                    </div>
-
-                </div>
-                
+                           </div>
+                           <div class="flex mt-3  lg:block sm:flex-wrap">
+                              
+                              <img src="https://img.icons8.com/offices/30/000000/php-logo.png"/>
+                              <img src="https://img.icons8.com/color/48/000000/django.png" class="sm:pl-2"/>
+                           </div>
+                           
+                     </aside>
+                  </div>
+   
+               </div>  
+                -->
+               <div class="container p-5 grid lg:flex lg:gap-3 justify-center items-center grid-cols-3 md:grid-cols-3 sm:grid-cols-3 max-w-md md:max-w-full mx-auto">
+                     <img src="https://img.icons8.com/color/48/000000/html-5--v1.png" title="HTML" alt="html"/>
+                     <img src="https://img.icons8.com/color/48/000000/css3.png"/>
+                     <img src="https://img.icons8.com/color/48/000000/tailwind_css.png"/>
+                     <img src="https://img.icons8.com/color/48/000000/javascript--v1.png"/>
+                     <img src="https://img.icons8.com/ultraviolet/40/000000/react--v1.png"/>
+                     <img src="https://img.icons8.com/fluency/48/000000/angularjs.png"/>
+                     <img src="https://img.icons8.com/color/48/000000/python--v1.png"/>
+                     <img src="https://img.icons8.com/color/48/000000/postgreesql.png"/>
+                     <img src="https://img.icons8.com/color/48/000000/django.png"/>
+                     
+               </div>
             </div>
-            
         </div>
-
-    </section>
+      </section>
     <!-- --------------- PROJECTS --------------- -->
     <section class="flex mx-auto justify-center items-center space-y-10  bg-porcelain">
         <div class="h-full w-full">
@@ -463,23 +473,6 @@
                                    <input
                                       type="email"
                                       placeholder="Your Email"
-                                      class="
-                                      w-full
-                                      rounded
-                                      py-3
-                                      px-[14px]
-                                      text-body-color text-base
-                                      border border-[f0f0f0]
-                                      outline-none
-                                      focus-visible:shadow-none
-                                      focus:border-primary
-                                      "
-                                      />
-                                </div>
-                                <div class="mb-6">
-                                   <input
-                                      type="text"
-                                      placeholder="Your Phone"
                                       class="
                                       w-full
                                       rounded
@@ -1355,7 +1348,9 @@
                     <p tabindex="0" class="focus:outline-none mt-6 text-xs lg:text-sm leading-none text-gray-400 ">Made with ♥️ By Monica Masae.</p>
                 </div>
                 <div>
+                  <h2 class=" text-gray-400 text-center mb-4">Lets Connect:</h2>
                     <div class="flex items-center justify-center mb-6 gap-4">
+                        
                         <a aria-label="github"  href="https://github.com/M0nicah" class="ml-4">
                            <div class="">
                               <img src="https://img.icons8.com/sf-black/64/undefined/github.png" class="w-10 h-10"/>
@@ -1394,6 +1389,10 @@
 })
 
 </script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+   <script>
+   AOS.init();
+   </script>
     
 </body>
 </html>
