@@ -9,23 +9,40 @@
     <link rel="stylesheet" href="/dist/output.css">
     <link rel="stylesheet" href="./src/input.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://cdn.jsdelivr.net/npm/scrolls.js@1.0.18/scrolls.js"></script>
+
+    <style>
+      nav {
+        text-align: center;
+      }
+
+      nav a {
+        margin: 0.625rem;
+        word-break: keep-all;
+      }
+    </style>
+
 </head>
 <body class="bg-porcelain font w-full h-auto max-h-screen">
     <header class="container ">
-        <nav class="flex justify-between bg-white/70 backdrop-blur-md fixed w-full md:justify-around md:px-3">
+        <nav class="flex justify-between bg-white/70 backdrop-blur-md fixed w-full md:justify-around md:px-3 js-nav">
             <div class="flex justify-center items-center ">
                 <img src="./src/images/logo2.png" alt="my logo2" class="w-20">
             </div>
-            <ul class="flex space-x-6 text-center justify-center items-center md:space-x-8 md:justify-items-center md:flex hidden">
+            <ul class="flex space-x-6 text-center justify-center items-center md:space-x-8 md:justify-items-center md:flex hidden js-nav">
                 <a href=""><li class=" text-green-500 hover:text-wild_willow ">Home</li></a>
-                <a href=""><li class="text-black hover:text-wild_willow ">About</li></a>
-                <a href=""><li class="text-black hover:text-wild_willow ">Skills</li></a>
-                <a href=""><li class="text-black hover:text-wild_willow ">Projects</li></a>
-                <a href=""><li class="text-black hover:text-wild_willow ">Contacts</li></a>
+                <a href="#about" title="About"><li class="text-black hover:text-wild_willow" >About</li></a>
+                <a href="#skills" title="skills"><li class="text-black hover:text-wild_willow ">Skills</li></a>
+                <a href="#projects" title="projects"><li class="text-black hover:text-wild_willow ">Projects</li></a>
+                <a href="#contacts" title="contacts"><li class="text-black hover:text-wild_willow ">Contacts</li></a>
             </ul>
             <div>
-                <button class="bg-emerald-500 flex justify-center items-center rounded-md shadow hover:shadow-xl text-center text-white px-2 py-2 mt-5 md:flex hidden" data-aos="fade-left"
-                data-aos-offset="200" data-aos-delay="200" data-aos-duration="2000">Download Resume</button>
+               <a href="https://github.com/M0nicah/images/archive/refs/heads/main.zip">
+               <button class="bg-emerald-500 flex justify-center items-center rounded-md shadow hover:shadow-xl text-center text-white px-2 py-2 mt-5 md:flex hidden" data-aos="fade-left"
+                data-aos-offset="200" data-aos-delay="200" data-aos-duration="2000" onclick="downloadResume()" title="Open link in new tab to download Resume">Download Resume</button>
+
+               </a>
+                
             </div>
             <!-- MOBILE MENU -->
             <div
@@ -38,7 +55,11 @@
                     <a href=""><li class="text-black hover:text-wild_willow ">Contacts</li></a>
                 </ul>
                 <div>
-                    <button class="bg-emerald-500 block justify-center items-center rounded-md shadow hover:shadow-xl text-center text-white px-2 py-2 mt-5 md:">Download Resume</button>
+                  <a href="https://github.com/M0nicah/images/archive/refs/heads/main.zip">
+                     <button class="bg-emerald-500 block justify-center items-center rounded-md shadow hover:shadow-xl text-center text-white px-2 py-2 mt-5 md:" onclick="downloadResume()">Download Resume</button>
+
+                  </a>
+                   
                 </div>
             </div>
             <!-- Hamberger Menu -->
@@ -74,7 +95,7 @@
             <blockquote class="text-xs lg:text-sm tracking-tighter text-slate-500 mt-4">I develop applications with excellent technology.</blockquote>
             <div class=" mt-5">
                 <button class="bg-emerald-500 p-4 text-white text-base rounded-3xl shadow-md text-center cursor-pointer tracking-wide leading-none sm:inline-block transition duration-200 ease-in-out sm:mr-3 sm:mb-0" data-aos="fade-right" data-aos-offset="200" data-aos-delay="200" data-aos-duration="2000">Contact Me</button>
-                <button class="bg-black p-4 text-white text-base rounded-3xl shadow-md text-center cursor-pointer tracking-wide leading-none sm:inline-block" data-aos="fade-left" data-aos-offset="200" data-aos-delay="200" data-aos-duration="2000">Learn More</button>
+                <button class="bg-black p-4 text-white text-base rounded-3xl shadow-md text-center cursor-pointer tracking-wide leading-none sm:inline-block" data-aos="fade-left" data-aos-offset="200" data-aos-delay="200" data-aos-duration="1500" onclick="downloadResume()">Download Resume</button>
             </div>
         </article>
         <aside class="w-1/2 lg:w-3/6 flex justify-end p-5">
@@ -84,7 +105,7 @@
     </main>
     <!-- --------------- ABOUT ME --------------- -->
     <section class="flex mx-auto justify-center items-center space-y-10 bg-white"  >
-        <div class="h-full w-full">
+        <div class="about h-full w-full">
             <div class=" py-10 px-10 ">
                 <div class="flex mx-auto justify-center items-center w-32">
                     <img src="./src/images/logo2.png" alt="" data-aos="fade-down" data-aos-offset="200" data-aos-delay="200" data-aos-duration="2000">
@@ -96,7 +117,7 @@
                 </p>
             </div>
             <!-- --------------- SKILLLS --------------- -->
-            <div class="bg-black w-full  p-5 mt-10 text-center h-full ">
+            <div class="bg-black w-full  p-5 mt-10 text-center h-full skills ">
                <div class="text-center text-white  py-[25px]">
                   <h1 class="text-4xl">Tech <span class="text-green-700 ">Stack</span></h1>
                   <p class="text-center text-emerald-100 mt-5"> I have honed  my skills in front-end development, and User Interface design. </p>
@@ -173,7 +194,7 @@
         </div>
       </section>
     <!-- --------------- PROJECTS --------------- -->
-    <section class="flex mx-auto justify-center items-center space-y-10  bg-porcelain">
+    <section class="flex mx-auto justify-center items-center space-y-10  bg-porcelain projects">
         <div class="h-full w-full">
             <div class=" py-10 px-10 ">
                 <div class="flex mx-auto justify-center items-center w-32">
@@ -308,7 +329,7 @@
                 </div>
             </div>
         </div>
-        <section class="py-5 lg:py-[10px] overflow-hidden z-10 ">
+        <section class="py-5 lg:py-[10px] overflow-hidden z-10 contacts">
             <div class=" px-10 lg:py-[100px] mx-4 rounded shadow-sm">
                 <div class="container ">
                     <div class="flex flex-wrap lg:justify-between mx-4">
@@ -1389,10 +1410,12 @@
 })
 
 </script>
+<script src="./index.js"></script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-   <script>
-   AOS.init();
-   </script>
+<script>
+AOS.init();
+</script>
+<script src="https://cdn.jsdelivr.net/npm/scrolls.js@1.0.18/scrolls.min.js"></script>
     
 </body>
 </html>

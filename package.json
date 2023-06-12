@@ -4,5 +4,8 @@
   },
   "scripts": {
     "build": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+  },
+  "dependencies": {
+    "scrolls.js": "^1.0.18"
   }
 }
